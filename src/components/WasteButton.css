@@ -1,0 +1,49 @@
+.waste-button {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    border: 5px solid #2D3748;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+    padding: 5px;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.waste-button:hover {
+    transform: translateY(-1px);
+}
+
+.waste-button:active {
+    transform: translateY(1px);
+}
+
+.waste-button img {
+    height: 4em;
+    aspect-ratio: 1;
+    object-fit: contain;
+    padding-left: 0.5em;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wasted-amount {
+    font-size: 0.9rem;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.1em;
+}

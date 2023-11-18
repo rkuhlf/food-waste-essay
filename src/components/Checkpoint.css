@@ -1,0 +1,34 @@
+.unmet-checkpoint {
+    position: relative;
+
+    background-color: #E2E8F0;
+    border-top: var(--border-thickness) solid #A0AEC0;
+
+    --border-thickness: 3px;
+}
+
+.checkpoint-progress {
+    background-color: #68D391;
+    position: absolute;
+    top: calc(-1 * var(--border-thickness));
+    height: var(--border-thickness);
+}
+
+.checkpoint-label {
+    position: absolute;
+
+    margin: 0 auto;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-style: italic;
+    filter: none;
+
+    padding-top: 10px;
+}
+
+.hidden-content {
+    height: 100px;
+    overflow-y: hidden;
+    filter: blur(8px);
+}

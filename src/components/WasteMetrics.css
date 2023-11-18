@@ -1,0 +1,72 @@
+.waste-metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+
+    margin: 0 auto;
+
+    border: 3px solid #2D3748;
+
+    --border-radius: 10px;
+    --inner-border-radius: calc(var(--border-radius) - 2px);
+    border-radius: var(--border-radius);
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.waste-metric {
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.4em 0.8em;
+
+    border-right: 2px solid #2D3748;
+}
+
+.waste-metric:first-of-type {
+    border-top-left-radius: var(--inner-border-radius);
+    border-bottom-left-radius: var(--inner-border-radius);
+}
+
+.waste-metric:last-of-type {
+    border-top-right-radius: var(--inner-border-radius);
+    border-bottom-right-radius: var(--inner-border-radius);
+
+    border-right: none;
+}
+
+
+.waste-metric span {
+    padding: 0;
+    margin: 0;
+}
+
+/* .waste-metric-weight {
+    background-color: #BEE3F8;
+}
+
+.waste-metric-money {
+    background-color: #FED7D7;
+}
+
+.waste-metric-emissions {
+    background-color: #E2E8F0;
+} */
+
+
+.amount {
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 0.9;
+}
+
+.label {
+    font-size: 0.9em;
+}

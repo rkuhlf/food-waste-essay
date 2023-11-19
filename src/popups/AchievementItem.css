@@ -1,9 +1,7 @@
 .achievement-item {
     display: flex;
     flex-direction: column;
-    border: 2px solid #2D3748;
     border-radius: 10px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .achievement-title-section {
@@ -50,4 +48,22 @@
 
 .achievement-checkbox img {
     height: 100%;
+}
+
+.achievement-completed {
+    border: 2px solid #2D3748;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-uncompleted {
+    border: 2px solid #CBD5E0;
+    color: #A0AEC0;
+}
+
+.achievement-uncompleted .achievement-title {
+    font-weight: normal;
+}
+
+.achievement-uncompleted img {
+    display: none;
 }

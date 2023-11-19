@@ -5,16 +5,28 @@
     bottom: 0;
     left: 0;
 
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 11;
+
+    animation: blur-in 0.4s ease-in-out forwards;
+}
+
+@keyframes blur-in {
+    0% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 }
 
 .achievements-popup {
-    position: fixed;
+    position: absolute;
 
     --side-offset: 10vw;
     top: 5vh;
-    bottom: 10vh;
+    height: 85vh;
     left: var(--side-offset);
     right: var(--side-offset);
 
@@ -32,6 +44,17 @@
     overflow-y: scroll;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    animation: popup-slide-in 0.3s ease-out forwards;
+}
+
+@keyframes popup-slide-in {
+    0% {
+        top: 100vh;
+    }
+
+    100% {
+        top: 5vh;
+    }
 }
 
 .achievements-popup::-webkit-scrollbar { /* WebKit */

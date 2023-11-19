@@ -1,5 +1,6 @@
 // TODO: add achievements.
 
+import { useState } from 'react';
 import './App.css';
 import Achievements from './components/Achievements';
 import AchievementsMenu from './components/AchievementsMenu';
@@ -21,11 +22,17 @@ function threeApplesProgress(wasted: WastedData) {
 }
 
 function App() {
+  const [achievementsIsOpen, setAchievementsIsOpen] = useState<boolean>(false);
+
   return (
     <>
       <WastedProvider>
-        <AchievementsPopup />
-        <AchievementsMenu />
+        {
+          achievementsIsOpen ?
+          <AchievementsPopup closePopup={() => setAchievementsIsOpen(false)} />
+          : <></>
+        }
+        <AchievementsMenu openAchievements={() => setAchievementsIsOpen(true)} />
         <Achievements />
         <div className='title-container'>
           <h1>From Data to Dumpsters</h1>

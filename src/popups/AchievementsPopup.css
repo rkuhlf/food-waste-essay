@@ -1,0 +1,55 @@
+.popup-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    backdrop-filter: blur(10px);
+    z-index: 11;
+}
+
+.achievements-popup {
+    position: fixed;
+
+    --side-offset: 10vw;
+    top: 5vh;
+    bottom: 10vh;
+    left: var(--side-offset);
+    right: var(--side-offset);
+
+    background-color: white;
+    border-radius: 20px;
+
+    border: 5px solid #2D3748;
+
+    z-index: 12;
+
+    padding: 20px;
+    padding-top: 0px;
+
+    backdrop-filter: blur(10px);
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.achievements-popup::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+.achievements-title {
+    line-height: 1;
+    text-align: center;
+    border-bottom: 2px solid #2D3748;
+    padding: 10px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.achievements-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}

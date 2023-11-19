@@ -7,6 +7,7 @@ import Checkpoint from './components/Checkpoint';
 import WasteButton from './components/WasteButton';
 import WasteSection from './components/WasteSection';
 import { apple, chicken, cow, egg, pig } from './data/wastables';
+import AchievementsPopup from './popups/AchievementsPopup';
 import { WastedData, WastedProvider } from './providers/wastedContext';
 
 function threeApplesProgress(wasted: WastedData) {
@@ -23,6 +24,7 @@ function App() {
   return (
     <>
       <WastedProvider>
+        <AchievementsPopup />
         <AchievementsMenu />
         <Achievements />
         <div className='title-container'>

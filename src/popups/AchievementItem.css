@@ -1,0 +1,53 @@
+.achievement-item {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #2D3748;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-title-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    gap: 7px;
+    padding: 5px;
+}
+
+.achievement-title-section img {
+    height: 1em;
+}
+
+.achievement-title {
+    font-weight: 500;
+    text-align: center;
+    line-height: 1;
+    width: fit-content;
+    display: inline;
+}
+
+.achievement-description-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    padding-top: 5px;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.achievement-description {
+    font-size: 0.9em;
+    line-height: 1.1;
+}
+
+.achievement-checkbox {
+    height: 1em;
+}
+
+.achievement-checkbox img {
+    height: 100%;
+}

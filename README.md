@@ -1,3 +1,9 @@
+
+<!-- https://www.svgrepo.com/svg/533056/trophy -->
+<!-- https://www.svgrepo.com/collection/fitness-and-health-food-vectors/ -->
+<!-- https://www.svgrepo.com/svg/398060/pig-face -->
+<!-- https://chakra-ui.com/docs/styled-system/theme -->
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

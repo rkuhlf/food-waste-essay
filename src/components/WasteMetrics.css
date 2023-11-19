@@ -1,6 +1,6 @@
 .waste-metrics {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 
@@ -18,16 +18,30 @@
 }
 
 .waste-metric {
-    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 
+    gap: 10px;
+
+    border-right: 2px solid #2D3748;
+    padding: 0.4em 0.8em;
+}
+
+.metric-icon {
+    height: 2.2em;
+}
+
+.metric-icon img {
+    height: 100%;
+}
+
+.metric-labels {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    padding: 0.4em 0.8em;
-
-    border-right: 2px solid #2D3748;
 }
 
 .waste-metric:first-of-type {
@@ -48,7 +62,7 @@
     margin: 0;
 }
 
-/* .waste-metric-weight {
+.waste-metric-weight {
     background-color: #BEE3F8;
 }
 
@@ -58,7 +72,7 @@
 
 .waste-metric-emissions {
     background-color: #E2E8F0;
-} */
+}
 
 
 .amount {
@@ -70,3 +84,10 @@
 .label {
     font-size: 0.9em;
 }
+
+@media screen and (max-width: 600px) {
+    .metric-icon {
+      display: none;
+    }
+  }
+  

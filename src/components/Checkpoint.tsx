@@ -10,7 +10,6 @@ export default function Checkpoint({ children, progressFunction }: PropsWithChil
     const [hasBeenCompleted, setHasBeenCompleted] = useState<boolean>(false);
 
     useEffect(() => {
-        console.log(progressFunction)
         const newProgress = progressFunction(data.wasted);
         setProgress(newProgress);
 

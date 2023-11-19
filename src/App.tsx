@@ -1,6 +1,8 @@
 // TODO: add achievements.
 
 import './App.css';
+import Achievements from './components/Achievements';
+import AchievementsMenu from './components/AchievementsMenu';
 import Checkpoint from './components/Checkpoint';
 import WasteButton from './components/WasteButton';
 import WasteSection from './components/WasteSection';
@@ -13,7 +15,7 @@ function threeApplesProgress(wasted: WastedData) {
   if (!apple) {
     return 0;
   }
-  console.log("compouewt")
+
   return apple.count / 3;
 }
 
@@ -21,6 +23,8 @@ function App() {
   return (
     <>
       <WastedProvider>
+        <AchievementsMenu />
+        <Achievements />
         <div className='title-container'>
           <h1>From Data to Dumpsters</h1>
           <h3 className='subtitle'>Food Waste Metrics</h3>

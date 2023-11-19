@@ -1,4 +1,4 @@
-export type WastedName = "Apple" | "Turkey" | "slice of bread" | "Cow" | "Chicken" | "Pig" | "Egg";
+export type WastedName = "Apple" | "Turkey" | "slice of bread" | "Cow" | "Chicken" | "Pig" | "Egg" | "Gallon of Milk";
 
 export type Wastable = {
     name: WastedName;

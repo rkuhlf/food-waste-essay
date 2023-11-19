@@ -38,20 +38,28 @@ function WasteMetric({
     label,
     amount,
     name,
+    src,
     precision
 }: {
     label: string;
     amount: number;
     name: string;
+    src: string;
     precision?: number;
 }) {
     const precisionFactor = Math.pow(10, precision || 0);
 
     return (
         <div className={`waste-metric waste-metric-${name}`}>
-            <span className="amount">{Math.round(amount * precisionFactor) / precisionFactor}</span>
+            <div className="metric-labels">
+                <span className="amount">{Math.round(amount * precisionFactor) / precisionFactor}</span>
 
-            <span className="label">{label}</span>
+                <span className="label">{label}</span>
+            </div>
+
+            <div className="metric-icon">
+                <img src={src} />
+            </div>
         </div>
     )
 }
@@ -61,9 +69,10 @@ export default function WasteMetrics() {
 
     return (
         <div className="waste-metrics">
-            <WasteMetric name="weight" amount={computeWastedWeight(data.wasted)} label="lbs wasted"/>
-            <WasteMetric name="money" amount={computeWastedDollars(data.wasted)} label="$ lost"/>
-            <WasteMetric name="emissions" amount={computeWastedEmissions(data.wasted)} label="kg CO2" precision={2}/>
+            <WasteMetric name="weight" amount={computeWastedWeight(data.wasted)} label="lbs wasted"
+            src="./assets/weight.svg"/>
+            <WasteMetric name="money" amount={computeWastedDollars(data.wasted)} label="$ lost" src="./assets/dollar.svg"/>
+            <WasteMetric name="emissions" amount={computeWastedEmissions(data.wasted)} label="kg CO2" src="./assets/clouds.svg" precision={2}/>
         </div>
     )
 }

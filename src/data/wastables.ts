@@ -11,6 +11,17 @@ export const apple: Wastable = {
     count: 1,
 }
 
+export const gallonOfMilk: Wastable = {
+    name: "Gallon of Milk",
+    image: "./assets/apple.svg", // TODO
+    calories: 100,
+    kgCO2: 0.01,
+    price: 1,
+    weight: 8.6,
+
+    count: 1,
+}
+
 export const cow: Wastable = {
     name: "Cow",
     image: "./assets/cow.svg",

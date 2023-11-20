@@ -18,6 +18,7 @@ export const achievements: AchievementData[] = [
 
             return false;
         },
+        requirement: "Waste 1.2 pounds.",
         completed: false,
     },
     {
@@ -36,10 +37,11 @@ export const achievements: AchievementData[] = [
 
             return false;
         },
+        requirement: "Waste 470 pounds.",
         completed: false,
     },
     {
-        title: "The African Average",
+        title: "African Eating",
         description: "Throw away the amount of food eaten by the average African each year.",
         iconSrc: "./assets/trash.svg", // TODO
         completionFunction: (wasted: WastedData) => {
@@ -54,10 +56,11 @@ export const achievements: AchievementData[] = [
 
             return false;
         },
+        requirement: "Waste 1192 pounds.",
         completed: false,
     },
     {
-        title: "The Average",
+        title: "Average Eating",
         description: "Throw away the amount of food eaten by an average person worldwide each year.",
         iconSrc: "./assets/trash.svg", // TODO
         completionFunction: (wasted: WastedData) => {
@@ -72,10 +75,11 @@ export const achievements: AchievementData[] = [
 
             return false;
         },
+        requirement: "Waste 1488 pounds.",
         completed: false,
     },
     {
-        title: "The Average American",
+        title: "American Eating",
         description: "Throw away the amount of food eaten by the average American each year.",
         iconSrc: "./assets/trash.svg", // TODO
         completionFunction: (wasted: WastedData) => {
@@ -90,6 +94,7 @@ export const achievements: AchievementData[] = [
 
             return false;
         },
+        requirement: "Waste 1996 pounds.",
         completed: false,
     },
     {
@@ -111,6 +116,7 @@ export const achievements: AchievementData[] = [
 
             return false;
         },
+        requirement: "Waste 378 million pounds of milk.",
         completed: false,
     },
     {
@@ -118,18 +124,19 @@ export const achievements: AchievementData[] = [
         description: "Throw away the amount of food that was donated to the Houston Food Bank in 2020.",
         iconSrc: "./assets/us-map.svg", // TODO
         completionFunction: (wasted: WastedData) => {
-            let totalWeight = 0;
+            let totalPrice = 0;
             for (const value of wasted.values()) {
-                totalWeight += value.price * value.count;
+                totalPrice += value.price * value.count;
                 
                 // This is probably somewhat more than 22 million meals.
-                if (totalWeight > 224806244) {
+                if (totalPrice > 224806244) {
                     return true;
                 }
             }
 
             return false;
         },
+        requirement: "Waste 224,806,244 dollars.",
         completed: false,
     },
     {
@@ -149,6 +156,7 @@ export const achievements: AchievementData[] = [
 
             return false;
         },
+        requirement: "Waste 1,008,219 pounds.",
         completed: false,
     },
     {
@@ -168,6 +176,7 @@ export const achievements: AchievementData[] = [
 
             return false;
         },
+        requirement: "Waste 438,356,164 pounds.",
         completed: false,
     },
     {
@@ -186,6 +195,7 @@ export const achievements: AchievementData[] = [
 
             return false;
         },
+        requirement: "Waste 160 billion pounds.",
         completed: false,
     }
 ]

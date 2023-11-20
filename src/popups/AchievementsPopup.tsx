@@ -5,7 +5,7 @@ import "./AchievementsPopup.css";
 export default function AchievementsPopup({closePopup}: {closePopup: Function}) {
     return (
         <div className="popup-backdrop" onClick={() => closePopup()}>
-            <div className="achievements-popup">
+            <div className="achievements-popup" onClick={e => e.stopPropagation()}>
                 <h2 className="achievements-title">Milestones</h2>
 
                 <div className="achievements-list">

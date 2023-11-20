@@ -6,7 +6,7 @@ import { WastedData } from "../providers/wastedContext";
 export type AchievementData = {
     title: string;
     description: string;
-    longDescription?: string;
+    requirement: string;
     iconSrc: string;
     completionFunction: (wasted: WastedData) => boolean;
     completed: boolean;

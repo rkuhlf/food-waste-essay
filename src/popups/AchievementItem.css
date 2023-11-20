@@ -23,11 +23,13 @@
     line-height: 1;
     width: fit-content;
     display: inline;
+
+    padding-top: 5px;
 }
 
 .achievement-description-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
     padding: 10px;
@@ -40,6 +42,11 @@
 .achievement-description {
     font-size: 0.9em;
     line-height: 1.1;
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .achievement-checkbox {
@@ -66,4 +73,9 @@
 
 .achievement-uncompleted img {
     display: none;
+}
+
+.achievement-requirement {
+    font-style: italic;
+    font-size: 0.85em;
 }

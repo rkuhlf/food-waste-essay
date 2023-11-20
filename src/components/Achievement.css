@@ -8,8 +8,9 @@
     right: var(--achievements-offset);
 
     height: var(--achievements-height);
-    --width: 200px;
+    --width: 400px;
     width: var(--width);
+    max-width: max-content;
     padding: 6px;
     gap: 10px;
 

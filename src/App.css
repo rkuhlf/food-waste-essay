@@ -37,7 +37,8 @@
 }
 
 .chart {
-  width: 50vw;
+  max-width: var(--article-width);
+  width: 80vw;
   max-height: 50vh;
   aspect-ratio: 1;
   padding: 20px;

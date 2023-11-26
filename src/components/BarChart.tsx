@@ -1,52 +1,36 @@
-import { useEffect, useRef } from 'react';
-import Chart from 'chart.js/auto';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title, CategoryScale, LinearScale, BarElement } from "chart.js";
+ChartJS.register(ArcElement, Tooltip, Legend, Title, CategoryScale, LinearScale, BarElement);
 
-interface PieChartProps {
+import { Bar } from "react-chartjs-2";
+
+
+interface BarChartProps {
   data: number[];
   labels: string[];
   title: string;
 }
 
-const PieChart: React.FC<PieChartProps> = ({ data, labels, title }) => {
-  const chartRef = useRef<HTMLCanvasElement | null>(null);
-  let chart: Chart<"bar", number[], string> | null = null;
-
-  useEffect(() => {
-    if (chartRef.current) {
-      const ctx = chartRef.current.getContext('2d');
-
-      if (ctx) {
-        if (chart !== null) {
-          chart.destroy();
-        }
-
-        chart = new Chart(ctx, {
-          type: 'bar',
-          options: {
-            plugins: {
-                legend: {
-                    display: false
-                },
-                title: {
-                  text: title,
-                  display: true,
-                },
-            }
-          },
-          data: {
-            labels,
-            datasets: [{
-              data,
-            }],
-          },
-        });
-      }
-    }
-  }, [data, labels]);
-
+const BarChart: React.FC<BarChartProps> = ({ data, labels, title }) => {
   return (
-    <canvas ref={chartRef} width="40%" height="40%"></canvas>
+    <Bar data={{
+      labels,
+      datasets: [{
+        data,
+        backgroundColor: ['#81E6D9', '#D6BCFA', '#FEB2B2', '#9AE6B4', '#D6BCFA', '#9DECF9'],
+      }],
+    }} options={{
+      plugins: {
+        legend: {
+          display: false
+        },
+        title: {
+          text: title,
+          display: true,
+        },
+      },
+      indexAxis: "y"
+    }} />
   );
 };
 
-export default PieChart;
+export default BarChart;

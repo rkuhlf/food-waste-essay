@@ -10,7 +10,7 @@ export default function AchievementsPopup({closePopup}: {closePopup: Function}) 
 
                 <div className="achievements-list">
                     {
-                        achievements.map(achievement => <AchievementItem achievement={achievement}/>)
+                        achievements.map(achievement => <AchievementItem achievement={achievement} key={achievement.title}/>)
                     }
                 </div>
             </div>

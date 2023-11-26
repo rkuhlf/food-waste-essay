@@ -31,7 +31,6 @@ export default function Achievements() {
                 continue;
             }
 
-            console.log(achievement.completionFunction);
             if (achievement.completionFunction(data.wasted)) {
                 achievement.completed = true;
                 addAchievement(achievement);

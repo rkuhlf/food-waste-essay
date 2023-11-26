@@ -15,7 +15,7 @@ export default function WasteSection({wastables}: {wastables?: Wastable[]}) {
             <div className="waste-section">
                 {
                     wastables?.map(wastable => {
-                        return <WasteButton toWaste={wastable} />
+                        return <WasteButton toWaste={wastable} key={wastable.name} />
                     })
                 }
             </div>

@@ -24,7 +24,7 @@ export const gallonOfMilk: Wastable = {
 
 export const bread: Wastable = {
     name: "Loaf of Bread",
-    image: "./assets/apple.svg",
+    image: "./assets/bread.svg",
     calories: 95,
     kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
     price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
@@ -35,7 +35,7 @@ export const bread: Wastable = {
 
 export const bananas: Wastable = {
     name: "Bananas",
-    image: "./assets/apple.svg",
+    image: "./assets/banana.svg",
     calories: 95,
     kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
     price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
@@ -46,7 +46,7 @@ export const bananas: Wastable = {
 
 export const lettuce: Wastable = {
     name: "Lettuce",
-    image: "./assets/apple.svg",
+    image: "./assets/lettuce.svg",
     calories: 95,
     kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
     price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
@@ -57,7 +57,7 @@ export const lettuce: Wastable = {
 
 export const cheese: Wastable = {
     name: "Cheese Wedge",
-    image: "./assets/apple.svg",
+    image: "./assets/cheese-wedge.svg",
     calories: 95,
     kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
     price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
@@ -68,7 +68,7 @@ export const cheese: Wastable = {
 
 export const carrots: Wastable = {
     name: "Baby Carrots",
-    image: "./assets/apple.svg",
+    image: "./assets/carrot.svg",
     calories: 95,
     kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
     price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
@@ -77,9 +77,9 @@ export const carrots: Wastable = {
     count: 1,
 }
 
-export const chickenBreast: Wastable = {
-    name: "Chicken Breast",
-    image: "./assets/apple.svg",
+export const chickenThigh: Wastable = {
+    name: "Chicken Thigh",
+    image: "./assets/chicken-thigh.svg",
     calories: 95,
     kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
     price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
@@ -90,7 +90,7 @@ export const chickenBreast: Wastable = {
 
 export const steak: Wastable = {
     name: "Steak",
-    image: "./assets/apple.svg",
+    image: "./assets/steak.svg",
     calories: 95,
     kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
     price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
@@ -99,9 +99,9 @@ export const steak: Wastable = {
     count: 1,
 }
 
-export const mutton: Wastable = {
-    name: "Mutton",
-    image: "./assets/apple.svg",
+export const pork: Wastable = {
+    name: "Pork",
+    image: "./assets/pork.svg",
     calories: 95,
     kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
     price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
@@ -109,13 +109,10 @@ export const mutton: Wastable = {
 
     count: 1,
 }
-
-// Loaf of bread.
-// 10" pizza.
 
 export const pizza: Wastable = {
     name: '10" Pizza',
-    image: "./assets/apple.svg",
+    image: "./assets/pizza.svg",
     calories: 95,
     kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
     price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
@@ -126,7 +123,7 @@ export const pizza: Wastable = {
 
 export const iceCream: Wastable = {
     name: 'Ice Cream',
-    image: "./assets/apple.svg",
+    image: "./assets/ice-cream.svg",
     calories: 95,
     kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
     price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
@@ -137,7 +134,7 @@ export const iceCream: Wastable = {
 
 export const cake: Wastable = {
     name: 'Cake',
-    image: "./assets/apple.svg",
+    image: "./assets/cake.svg",
     calories: 95,
     kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
     price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/

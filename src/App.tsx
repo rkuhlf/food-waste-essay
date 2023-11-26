@@ -9,7 +9,7 @@ import Checkpoint from './components/Checkpoint';
 import ResidentialWastePieChart from './components/ResidentialWastePieChart';
 import WasteButton from './components/WasteButton';
 import WasteSection from './components/WasteSection';
-import { apple, bananas, bread, cake, carrots, cheese, chicken, chickenBreast, cow, dozenEggs, egg, gallonOfMilk, iceCream, lettuce, mealPlan, mutton, pig, pizza, steak, swimmingPoolOfMilk } from './data/wastables';
+import { apple, bananas, bread, cake, carrots, cheese, chicken, chickenThigh, cow, dozenEggs, egg, gallonOfMilk, iceCream, lettuce, mealPlan, pork, pig, pizza, steak, swimmingPoolOfMilk } from './data/wastables';
 import AchievementsPopup from './popups/AchievementsPopup';
 import { WastedData, WastedProvider } from './providers/wastedContext';
 import { wastedNames } from './types/wastable';
@@ -58,7 +58,7 @@ function waste50Animals(wasted: WastedData) {
 function waste50Pounds(wasted: WastedData) {
   let count = 0;
   for (const value of wasted.values()) {
-    if (value.name == "Mutton" || value.name == "Steak" || value.name == "Chicken Breast") {
+    if (value.name == "Pork" || value.name == "Steak" || value.name == "Chicken Thigh") {
       count += value.count;
     }
   }
@@ -159,7 +159,7 @@ function App() {
 
           (https://www.sciencedirect.com/science/article/pii/S175173111700218X?via%3Dihub, https://humaneherald.org/2019/05/09/comparison-of-protein-and-caloric-energy-kcal-produced-per-acre-on-u-s-farms/#:~:text=Soybeans%20are%20the%20highest%20producer,at%20513%2C066%20(g)%2Facre)
 
-          <WasteSection wastables={[chickenBreast, mutton, steak]} />
+          <WasteSection wastables={[chickenThigh, pork, steak]} />
 
           <Checkpoint label="Waste 50 lbs of meat." progressFunction={waste50Pounds}></Checkpoint>
 

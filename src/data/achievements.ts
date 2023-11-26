@@ -104,7 +104,7 @@ export const achievements: AchievementData[] = [
         completionFunction: (wasted: WastedData) => {
             let totalWeight = 0;
             for (const value of wasted.values()) {
-                if (value.name == "Gallon of Milk") {
+                if (value.name == "Gallon of Milk" || value.name == "Olympic Pool of Milk") {
                     totalWeight += value.weight * value.count;
                 
                     // 378 million pounds.
@@ -199,3 +199,19 @@ export const achievements: AchievementData[] = [
         completed: false,
     }
 ]
+
+// Add some more for CO2 to give a better picture.
+
+// 4 miles is 0.133333333 gallons, which is 2.66666666 lbs of CO2
+// https://www.nasdaq.com/articles/the-average-american-spends-this-much-driving-to-the-grocery-store#:~:text=The%20average%20shopper%20drives%20four,miles%20per%20gallon%20of%20gas.
+
+
+// Average vehicle is 6-9 tons each year. https://www.c2es.org/content/reducing-your-transportation-footprint/#:~:text=Burning%20one%20gallon%20of%20gasoline,tons%20of%20CO2%20each%20year.
+
+// Fly from NY to LA
+// 133,250 lbs
+// https://terrapass.com/blog/airline-carbon-offsets-air-travel-green/#:~:text=According%20to%20BlueSkyModel%2C%20the%20average,tonnes)%20of%20carbon%20dioxide%20emissions.
+
+
+
+// Add some more for CO2 to give a better picture.

@@ -5,9 +5,10 @@ import './App.css';
 import Achievements from './components/Achievements';
 import AchievementsMenu from './components/AchievementsMenu';
 import Checkpoint from './components/Checkpoint';
+import ResidentialWastePieChart from './components/ResidentialWastePieChart';
 import WasteButton from './components/WasteButton';
 import WasteSection from './components/WasteSection';
-import { apple, chicken, cow, egg, pig } from './data/wastables';
+import { apple, chicken, cow, egg, gallonOfMilk, mealPlan, pig, swimmingPoolOfMilk } from './data/wastables';
 import AchievementsPopup from './popups/AchievementsPopup';
 import { WastedData, WastedProvider } from './providers/wastedContext';
 
@@ -57,11 +58,11 @@ function App() {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur.
             </p>
 
+            <ResidentialWastePieChart />
+
+            {/* Section for things people throw out because they're expired. */}
             <WasteSection>
-              <WasteButton toWaste={cow} />
-              <WasteButton toWaste={pig} />
-              <WasteButton toWaste={chicken} />
-              <WasteButton toWaste={egg} />
+              <WasteButton toWaste={gallonOfMilk} />
             </WasteSection>
 
             <p className='article'>
@@ -72,6 +73,38 @@ function App() {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur.
             </p>
 
+            {/* Section for overeating. */}
+            <WasteSection>
+
+            </WasteSection>
+
+            <p className='article'>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur.
+            </p>
+
+            <p className='article'>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur.
+            </p>
+
+            {/* Section for animal waste. */}
+            <WasteSection>
+              <WasteButton toWaste={pig} />
+              <WasteButton toWaste={chicken} />
+              <WasteButton toWaste={egg} />
+            </WasteSection>
+
+            <p className='article'>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur.
+            </p>
+
+            <p className='article'>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur.
+            </p>
+
+            <p className='article'>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur.
+            </p>
+
             <p className='article'>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur.
             </p>
@@ -112,25 +145,10 @@ function App() {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur.
             </p>
 
-            <p className='article'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur.
-            </p>
-
-            <p className='article'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur.
-            </p>
-
-            <p className='article'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur.
-            </p>
-
-            <p className='article'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur.
-            </p>
-
-            <p className='article'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quia possimus consequuntur explicabo. Unde nihil quam quasi dignissimos perferendis cupiditate atque modi dolor. Laudantium, libero perferendis ipsam enim deleniti consectetur.
-            </p>
+            <WasteSection>
+              <WasteButton toWaste={swimmingPoolOfMilk} />
+              <WasteButton toWaste={mealPlan} />
+            </WasteSection>
           </Checkpoint>
         </main>
       </WastedProvider>

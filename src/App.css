@@ -35,3 +35,14 @@
   padding: 1em;
   max-width: var(--article-width);
 }
+
+.chart {
+  width: 50vw;
+  max-height: 50vh;
+  aspect-ratio: 1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}

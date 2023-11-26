@@ -75,11 +75,25 @@ export const chicken: Wastable = {
 
 
 
-export const swimmingPoolOfMilk: Wastable = multiplyWastable(gallonOfMilk);
+export const swimmingPoolOfMilk: Wastable = multiplyWastable(gallonOfMilk, "Olympic Pool of Milk", "./assets/swimming-milk.svg", 490000);
 
 // Lake michigan of orange juice.
 
-// An acre of wheat.
+
+// (2.3 bushels of wheat (138 pounds) to produce 100 pounds of white flour) https://www.owgl.org/p/resources/education/wheat-facts
+// An acre of wheat. 46.5 bushels in an acre (https://www.statista.com/statistics/190356/wheat-yield-per-harvested-acre-in-the-us-from-2000/);
+// 2021.74 pounds of wheat per acre
+// 1551 calories per pound https://www.fatsecret.com/calories-nutrition/usda/hard-white-wheat?portionid=48584&portionamount=1.000
+export const acreOfWheat: Wastable = {
+    name: "Acre of Wheat",
+    image: "./assets/wheat.svg",
+    calories: 1551 * 2021.74, // https://fdc.nal.usda.gov/fdc-app.html#/food-details/1470524/nutrients
+    kgCO2: 11.7934, // https://8billiontrees.com/carbon-offsets-credits/carbon-ecological-footprint-calculators/carbon-footprint-chicken/#:~:text=The%20carbon%20footprint%20of%20chicken%20per%20kg%20is%3A%2012.27kg,emissions%20per%20kilogram%20of%20chicken.; 
+    price: 7 * 2021.74, // https://www.macrotrends.net/2534/wheat-prices-historical-chart-data
+    weight: 2021.74, // lbs
+
+    count: 1,
+}
 
 // An acre of soybeans.
 
@@ -95,7 +109,20 @@ export const swimmingPoolOfMilk: Wastable = multiplyWastable(gallonOfMilk);
 
 // Throw away 100 blue whales
 
+const CO2_EMISSIONS_PER_POUND = 2.36443884; // From REFED; divide emissions by pounds of waste.
+
 // A full rice meal plan for four years 375 * 8. 3000 meals; 5000 lbs.
+export const mealPlan: Wastable = {
+    name: "4-Year Meal Plan",
+    image: "./assets/pot-of-food.svg",
+    calories: 3000 * 800, // probably around 800 calories per meal.
+    kgCO2: 5000 * CO2_EMISSIONS_PER_POUND,
+    price: 3000 * 10, // https://www.thepricer.org/how-much-do-live-chickens-cost/
+    weight: 5000, // lbs
+
+    count: 1,
+}
+
 
 // The daily catch of a commercial fishing boat in Alaska: https://sierraseafood.co/its-a-nautical-life-commercial-fishing-in-alaska/ 55,000 lbs
 

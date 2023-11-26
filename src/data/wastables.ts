@@ -14,9 +14,9 @@ export const apple: Wastable = {
 export const gallonOfMilk: Wastable = {
     name: "Gallon of Milk",
     image: "./assets/milk.svg", // TODO
-    calories: 100,
-    kgCO2: 0.01,
-    price: 1,
+    calories: 2305, // USDA
+    kgCO2: 8, // Milk means more
+    price: 4.36, // USDA
     weight: 8.6,
 
     count: 1,
@@ -25,32 +25,34 @@ export const gallonOfMilk: Wastable = {
 export const bread: Wastable = {
     name: "Loaf of Bread",
     image: "./assets/bread.svg",
-    calories: 95,
-    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
-    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
-    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+    calories: 1239, // 219 calories per 100g https://www.fob.uk.com/wp-content/uploads/2020/02/FS-20-Calories-in-Bread.pdf
+    kgCO2: 0.5, // https://www.treehugger.com/whats-environmental-impact-loaf-bread-4858589#:~:text=In%20their%20life%20cycle%20analysis,fertilizers%20used%20to%20grow%20wheat.
+    price: 3.50, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 1.25, // https://theshortordercook.com/how-many-slices-in-a-loaf-of-bread/
 
     count: 1,
 }
 
+// Assuming 6 bananas in the bunch.
 export const bananas: Wastable = {
     name: "Bananas",
     image: "./assets/banana.svg",
-    calories: 95,
-    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
-    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
-    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+    calories: 105 * 6, // https://www.foodnetwork.com/how-to/packages/food-network-essentials/how-many-calories-in-a-banana#:~:text=A%20medium%20banana%20contains%20105,large%20banana%20contains%20121%20calories.
+    kgCO2: 0.11 * 6, // https://www.co2everything.com/co2e-of/banana
+    price: 2, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 0.260145469 * 6, // https://fruitsandveggies.org/expert-advice/many-pounds-bananas-need-approximately-800-runners/
 
     count: 1,
 }
 
+// Assuming one cup shredded.
 export const lettuce: Wastable = {
     name: "Lettuce",
     image: "./assets/lettuce.svg",
-    calories: 95,
-    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
-    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
-    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+    calories: 5, // USDA
+    kgCO2: 0.26 * 0.079366, // https://impactful.ninja/what-is-the-carbon-footprint-of-lettuce/#:~:text=Lettuce%20has%20a%20carbon%20footprint,sustainable%20way%20to%20purchase%20lettuce.
+    price: 0.91, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 0.0793664144, // USDA
 
     count: 1,
 }
@@ -58,10 +60,10 @@ export const lettuce: Wastable = {
 export const cheese: Wastable = {
     name: "Cheese Wedge",
     image: "./assets/cheese-wedge.svg",
-    calories: 95,
-    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
-    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
-    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+    calories: 1578.04786,
+    kgCO2: 12.2597513, // https://www.co2everything.com/co2e-of/cheese
+    price: 7.49, // https://www.northcountrycheese.com/products/4-oz-parmesan-wedge
+    weight: 0.96875, // https://www.northcountrycheese.com/products/4-oz-parmesan-wedge
 
     count: 1,
 }
@@ -69,10 +71,10 @@ export const cheese: Wastable = {
 export const carrots: Wastable = {
     name: "Baby Carrots",
     image: "./assets/carrot.svg",
-    calories: 95,
-    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
-    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
-    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+    calories: 35 * 5,
+    kgCO2: 0.18, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
+    price: 0.92, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 1, // https://www.heb.com/product-detail/h-e-b-mini-cut-carrots/4833574
 
     count: 1,
 }
@@ -80,10 +82,10 @@ export const carrots: Wastable = {
 export const chickenThigh: Wastable = {
     name: "Chicken Thigh",
     image: "./assets/chicken-thigh.svg",
-    calories: 95,
-    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
-    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
-    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+    calories: 206, // USDA
+    kgCO2: 0.4756, // https://apps.carboncloud.com/climatehub/product-reports/id/82432573466
+    price: 0.255736224 * 2, // Target
+    weight: 0.255736224, // USDA
 
     count: 1,
 }
@@ -91,21 +93,22 @@ export const chickenThigh: Wastable = {
 export const steak: Wastable = {
     name: "Steak",
     image: "./assets/steak.svg",
-    calories: 95,
-    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
-    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
-    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+    calories: 679, // USDA
+    kgCO2: 38.9049999941, // https://www.co2everything.com/co2e-of/beef
+    price: 6.97, // https://www.target.com/p/usda-choice-angus-beef-new-york-strip-steak-value-pack-1-59-3-80-lbs-price-per-lb-good-38-gather-8482/-/A-14911566
+    weight: 0.553360278, // USDA
 
     count: 1,
 }
 
+// Assuming 3 pork chops.
 export const pork: Wastable = {
     name: "Pork",
     image: "./assets/pork.svg",
-    calories: 95,
-    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
-    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
-    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+    calories: 211 * 3, // USDA.
+    kgCO2: 6.26400, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
+    price: 3.44, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 0.575406504, // USDA
 
     count: 1,
 }
@@ -113,10 +116,10 @@ export const pork: Wastable = {
 export const pizza: Wastable = {
     name: '10" Pizza',
     image: "./assets/pizza.svg",
-    calories: 95,
-    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
-    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
-    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+    calories: 240 * 4, // https://www.dominos.com/en/pages/content/nutritional/cal-o-meter
+    kgCO2: 2.96, // https://biz.dominos.com/assets/js/pizza-footprint/index.html
+    price: 12,
+    weight: 0.5, // https://www.pizzabien.com/blogs/news/how-much-does-pizza-weigh-3-factors-will-decide-it
 
     count: 1,
 }
@@ -124,10 +127,10 @@ export const pizza: Wastable = {
 export const iceCream: Wastable = {
     name: 'Ice Cream',
     image: "./assets/ice-cream.svg",
-    calories: 95,
-    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
-    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
-    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+    calories: 970,
+    kgCO2: 3.4, // https://www.benjerry.com/values/issues-we-care-about/our-climate-impact
+    price: 5,
+    weight: 1, // https://www.target.com/c/ice-cream-frozen-foods-grocery/ben-jerry-s/-/N-5xsz2Z56ghc
 
     count: 1,
 }
@@ -135,14 +138,46 @@ export const iceCream: Wastable = {
 export const cake: Wastable = {
     name: 'Cake',
     image: "./assets/cake.svg",
-    calories: 95,
-    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
-    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
-    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+    calories: 3100,
+    kgCO2: 2.7640785, // https://foodfootprint.nl/en/foodprintfinder/cake/
+    price: 15, // https://www.target.com/p/double-cookies-n-39-cream-cake-7-34-favorite-day-8482/-/A-81450391#lnk=sametab
+    weight: 30 / 16,
 
     count: 1,
 }
 
+export const happyMeal: Wastable = {
+    name: 'Happy Meal',
+    image: "./assets/mcdonalds.svg",
+    calories: 685,
+    kgCO2: 2.35, // https://plantbasednews.org/news/environment/big-mac-carbon-footprint/
+    price: 4,
+    weight: 0.251326979 + 0.196211413 + 0.156528206 + 0.440924524,
+
+    count: 1,
+}
+
+export const cheetos: Wastable = {
+    name: 'Chips',
+    image: "./assets/chips.svg",
+    calories: 15 * 170,
+    kgCO2: 0.066 * 15, // https://www.greenchoicenow.com/p/cheetos-puffs-flavored-snacks
+    price: 5.7, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 15/16, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+
+    count: 1,
+}
+
+export const kfcBucket: Wastable = {
+    name: 'KFC Bucket',
+    image: "./assets/kfc-bucket.svg",
+    calories: 1860,
+    kgCO2: 1.39479654, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
+    price: 18, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 0.75, // My Mom.
+
+    count: 1,
+}
 
 export const cow: Wastable = {
     name: "Cow",

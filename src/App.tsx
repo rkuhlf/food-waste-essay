@@ -9,7 +9,7 @@ import Checkpoint from './components/Checkpoint';
 import ResidentialWastePieChart from './components/ResidentialWastePieChart';
 import WasteButton from './components/WasteButton';
 import WasteSection from './components/WasteSection';
-import { apple, bananas, bread, cake, carrots, cheese, chicken, chickenThigh, cow, dozenEggs, egg, gallonOfMilk, iceCream, lettuce, mealPlan, pork, pig, pizza, steak, swimmingPoolOfMilk } from './data/wastables';
+import { apple, bananas, bread, cake, carrots, cheese, chicken, chickenThigh, cow, dozenEggs, egg, gallonOfMilk, iceCream, lettuce, mealPlan, pork, pig, pizza, steak, swimmingPoolOfMilk, acreOfWheat, happyMeal, cheetos, kfcBucket } from './data/wastables';
 import AchievementsPopup from './popups/AchievementsPopup';
 import { WastedData, WastedProvider } from './providers/wastedContext';
 import { wastedNames } from './types/wastable';
@@ -151,7 +151,11 @@ function App() {
 
           <Paragraph>This massive overconsumption is a primary reason why approximately 40% of the US is obese. Unless we are able to change our eating habits, we will continue to waste our own money, the Earth's resources, our health, and the health of those who cannot afford enough to eat. However, it's worth pointing out that the blame for overeating should not rest solely on the consumer. Driven by capitalism, our culture compels us to consume as much as we can afford - as a show of wealth and status, but also as a way to pass the time, a kind of entertainment. On top of that, many people live in food deserts, where access to nutritious food is sparse. Unless alternative food options are available, they are forced to eat calorie-dense, addictive foods that promote overeating. So, while overconsumption hurts the consumer and is partially our own fault, it's so deeply ingrained in our society that regulation, policy, and large-scale cultural shifts will likely have to work in tandem if significant progress is to be made on the issue.</Paragraph>
 
-          Waste a Happy Meal, a party size bag of Cheetos, and a KFC bowl.
+          <WasteSection wastables={[happyMeal, cheetos, kfcBucket]}/>
+
+          Waste a week of junkfood Happy Meal, a party size bag of Cheetos, and a KFC bowl.
+
+          <Checkpoint progressFunction={junkFood}>
 
           <CarbonIntensityChart />
 
@@ -177,15 +181,16 @@ function App() {
           <Paragraph>Of course, it would be remiss to fail to mention the reasons for waste that are out of our control. Restaurants serve portions that are too large, which promotes overeating. In American capitalism, it favors companies to advertise and encourage us to buy as much as we can, because it makes them more money. Grocery stores have not done enough to reduce waste, with the notable exception of Tesco, which has reduced food waste to less than 1% for in-store products. Hopefully, their success will shame others into following.</Paragraph>
 
 
-          <Paragraph>Ultimately, we should vote with our forks and with our ballots for policies that reduce food waste and propose solutions to climate change. On top of that, we should start by looking at our own behaviors. There is no policy that causes 2.5% of all food produced to spoil in our refrigerators, 1% of food to go to waste because we don't want leftovers, or 0.5% of food to be thrown out because it doesn't taste good. Further, there is no policy forcing us to eat 19 billion pounds of beef, causing 5% of all US emissions. There is no policy forcing us to eat nearly twice the amount that we need. We waste food on an unbelievably massive scale. What can you do to fix that?</Paragraph>
+          <Paragraph>Ultimately, we should vote with our forks and with our ballots for policies that reduce food waste and propose solutions to climate change. On top of that, we should start by looking at our own behaviors. There is no policy that causes 2.5% of all food produced to spoil in our refrigerators, 1% of food to go to waste because we don't want leftovers, or 0.5% of food to be thrown out because it doesn't taste good. Further, there is no policy forcing us to eat 19 billion pounds of beef, causing 5% of all US emissions. There is no policy forcing us to eat nearly twice the amount that we need. We waste food on an unbelievably massive scale. What can <i>you</i> do to fix that?</Paragraph>
 
           {/* TODO: Add all of them down here. */}
-          <WasteSection wastables={[gallonOfMilk]}></WasteSection>
+          <WasteSection wastables={[apple, gallonOfMilk, bread, bananas, lettuce, cheese, carrots, dozenEggs, chickenThigh, steak, pork, pizza, iceCream, cake, cow, pig, egg, chicken, acreOfWheat, mealPlan, swimmingPoolOfMilk]}></WasteSection>
 
           <Checkpoint label="Waste the amount of food wasted by the US population every year." progressFunction={americaFoodWaste}>
             
           <Paragraph>Thank you for reading.</Paragraph>
 
+          </Checkpoint>
           </Checkpoint>
           </Checkpoint>
           </Checkpoint>

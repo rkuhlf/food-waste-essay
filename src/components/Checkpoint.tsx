@@ -6,7 +6,7 @@ export default function Checkpoint({ children, label, progressFunction }: PropsW
     progressFunction: (wasted: WastedData) => number;
     label: string;
 }>) {
-    const { data } = useContext(WastedContext);
+    const { data, skipEverything } = useContext(WastedContext);
     const [progress, setProgress] = useState<number>(0);
     const [hasBeenCompleted, setHasBeenCompleted] = useState<boolean>(false);
 
@@ -19,7 +19,7 @@ export default function Checkpoint({ children, label, progressFunction }: PropsW
         }
     }, [data, progressFunction, setProgress]);
 
-    if (hasBeenCompleted) {
+    if (hasBeenCompleted || data.skipEverything) {
         return <>
             {children}
         </>
@@ -30,6 +30,9 @@ export default function Checkpoint({ children, label, progressFunction }: PropsW
             <div className="checkpoint-progress" style={{width: progress * 100 + "%"}}></div>
             <div className="checkpoint-label">
                 {label}
+            </div>
+            <div className="skip-everything" onClick={() => skipEverything()}>
+                Skip to the end
             </div>
             <div className="hidden-content">
                 {children}

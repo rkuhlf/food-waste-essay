@@ -31,4 +31,18 @@
     height: 100px;
     overflow-y: hidden;
     filter: blur(8px);
+    z-index: 2;
+}
+
+.skip-everything {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 0.7em;
+    font-style: italic;
+    z-index: 10;
+
+    cursor: pointer;
+    text-decoration: underline;
+    color: #718096;
 }

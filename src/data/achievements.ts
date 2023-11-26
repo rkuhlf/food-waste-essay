@@ -202,9 +202,6 @@ export const achievements: AchievementData[] = [
 
 // Add some more for CO2 to give a better picture.
 
-// 4 miles is 0.133333333 gallons, which is 2.66666666 lbs of CO2
-// https://www.nasdaq.com/articles/the-average-american-spends-this-much-driving-to-the-grocery-store#:~:text=The%20average%20shopper%20drives%20four,miles%20per%20gallon%20of%20gas.
-
 
 // Average vehicle is 6-9 tons each year. https://www.c2es.org/content/reducing-your-transportation-footprint/#:~:text=Burning%20one%20gallon%20of%20gasoline,tons%20of%20CO2%20each%20year.
 

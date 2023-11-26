@@ -22,8 +22,129 @@ export const gallonOfMilk: Wastable = {
     count: 1,
 }
 
+export const bread: Wastable = {
+    name: "Loaf of Bread",
+    image: "./assets/apple.svg",
+    calories: 95,
+    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
+    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+
+    count: 1,
+}
+
+export const bananas: Wastable = {
+    name: "Bananas",
+    image: "./assets/apple.svg",
+    calories: 95,
+    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
+    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+
+    count: 1,
+}
+
+export const lettuce: Wastable = {
+    name: "Lettuce",
+    image: "./assets/apple.svg",
+    calories: 95,
+    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
+    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+
+    count: 1,
+}
+
+export const cheese: Wastable = {
+    name: "Cheese Wedge",
+    image: "./assets/apple.svg",
+    calories: 95,
+    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
+    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+
+    count: 1,
+}
+
+export const carrots: Wastable = {
+    name: "Baby Carrots",
+    image: "./assets/apple.svg",
+    calories: 95,
+    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
+    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+
+    count: 1,
+}
+
+export const chickenBreast: Wastable = {
+    name: "Chicken Breast",
+    image: "./assets/apple.svg",
+    calories: 95,
+    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
+    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+
+    count: 1,
+}
+
+export const steak: Wastable = {
+    name: "Steak",
+    image: "./assets/apple.svg",
+    calories: 95,
+    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
+    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+
+    count: 1,
+}
+
+export const mutton: Wastable = {
+    name: "Mutton",
+    image: "./assets/apple.svg",
+    calories: 95,
+    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
+    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+
+    count: 1,
+}
+
 // Loaf of bread.
 // 10" pizza.
+
+export const pizza: Wastable = {
+    name: '10" Pizza',
+    image: "./assets/apple.svg",
+    calories: 95,
+    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
+    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+
+    count: 1,
+}
+
+export const iceCream: Wastable = {
+    name: 'Ice Cream',
+    image: "./assets/apple.svg",
+    calories: 95,
+    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
+    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+
+    count: 1,
+}
+
+export const cake: Wastable = {
+    name: 'Cake',
+    image: "./assets/apple.svg",
+    calories: 95,
+    kgCO2: 0.12, // https://impactful.ninja/what-is-the-carbon-footprint-of-apples/
+    price: 1, // https://www.selinawamucii.com/insights/prices/united-states-of-america/apples/
+    weight: 0.5, // https://ryansjuice.com/blog/how-many-apples-in-a-pound#:~:text=The%20average%20apple%20is%20between,3%20apples%20in%20a%20pound.
+
+    count: 1,
+}
 
 
 export const cow: Wastable = {
@@ -73,9 +194,8 @@ export const chicken: Wastable = {
 
 
 
-
-
 export const swimmingPoolOfMilk: Wastable = multiplyWastable(gallonOfMilk, "Olympic Pool of Milk", "./assets/swimming-milk.svg", 490000);
+export const dozenEggs: Wastable = multiplyWastable(egg, "A Dozen Eggs", "./assets/egg.svg", 12);
 
 // Lake michigan of orange juice.
 
@@ -127,7 +247,6 @@ export const mealPlan: Wastable = {
 // The daily catch of a commercial fishing boat in Alaska: https://sierraseafood.co/its-a-nautical-life-commercial-fishing-in-alaska/ 55,000 lbs
 
 // The amount that a fishing boat catches over a lifetime. 5 * 50 * 40 = 10,000 days of fishing.
-
 
 
 function multiplyWastable(wastable: Wastable, newName: WastedName, newImage: string, times: number): Wastable {

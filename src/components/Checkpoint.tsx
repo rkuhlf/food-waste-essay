@@ -2,8 +2,9 @@ import { PropsWithChildren, useContext, useEffect, useState } from "react";
 import { WastedContext, WastedData } from "../providers/wastedContext";
 import "./Checkpoint.css";
 
-export default function Checkpoint({ children, progressFunction }: PropsWithChildren<{
+export default function Checkpoint({ children, label, progressFunction }: PropsWithChildren<{
     progressFunction: (wasted: WastedData) => number;
+    label: string;
 }>) {
     const { data } = useContext(WastedContext);
     const [progress, setProgress] = useState<number>(0);
@@ -28,7 +29,7 @@ export default function Checkpoint({ children, progressFunction }: PropsWithChil
         <div className="unmet-checkpoint">
             <div className="checkpoint-progress" style={{width: progress * 100 + "%"}}></div>
             <div className="checkpoint-label">
-                Waste three apples to continue.
+                {label}
             </div>
             <div className="hidden-content">
                 {children}

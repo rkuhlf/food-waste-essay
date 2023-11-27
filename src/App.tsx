@@ -122,14 +122,16 @@ function App() {
         
         <main>
           <Paragraph>
-            Americans waste 80 million tons of food each year, 40% of all of the food that we produce. For every person, 470 pounds of food is going down the drain. That's 456,000 calories, 640 dollars, and 2400 pounds of CO2. That's 390 meals, or enough to feed a family of four for a month! With numbers this big, it can be hard to keep your intuition for just how much food is going nowhere. Waste a couple of apples to remind yourself of what it's like.
+            Americans waste 80 million tons of food each year, 40% of all of the food that we produce. For every person, 470 pounds of food is going down the drain. That's 456,000 calories, 640 dollars, and 2400 pounds of CO2. The average American wastes 390 meals, or enough to feed a family of four for a month! With numbers this big, it can be hard to keep your intuition for just how much food is going nowhere. Waste a couple of apples to remind yourself of what it's like.
           </Paragraph>
 
           <WasteSection wastables={[apple]}></WasteSection>
 
           <Checkpoint label="Waste three apples to continue." progressFunction={threeApplesProgress}>
 
-          <Paragraph>Before we get too far ahead of ourselves, let's turn back to the root of the problem and ask why it even matters in the first place. There are three main reasons: hungry people, lost money, and environmental damage. One in seven Americans is food insecure, including one in five children. Wasted food is therefore evidence of a failure to distribute food to those who need it, even when it is available. We produce far more food that would be required to feed the US population, so even if we did distribute it properly we would be wasting money growing crops and animals, processing them, transporting them, and buying them, only to be thrown away at some point before they are actually eaten. Last, that surplus food is responsible for a significant amount of carbon dioxide. Food that is never eaten accounts for 6% of the total greenhouse emissions in the US. If food waste were a country, it would have the third highest emissions, behind China and the US.</Paragraph>
+          <Paragraph>Before we get too far ahead of ourselves, let's turn back to the root of the problem and ask why it even matters in the first place. There are three main reasons: hungry people, lost money, and environmental damage.</Paragraph>
+          
+          <Paragraph>One in seven Americans is food insecure, including one in five children. Wasted food is therefore evidence of a failure to distribute food to those who need it, even when it is available. The fact that there are people starving doesn't mean that we should make more food: We produce far more food that would be required to feed our population. So, even if we did distribute it properly, we would still be wasting money growing food, processing it, and transporting it, only so it can be thrown away before it's eaten. Last, that surplus food is responsible for a significant amount of carbon dioxide. Food that is never eaten accounts for 6% of the total greenhouse emissions in the US. If food waste were a country, it would have the third highest emissions, behind China and the US.</Paragraph>
 
           <WasteSection wastables={[dozenEggs, cheese, carrots]}></WasteSection>
 
@@ -141,7 +143,7 @@ function App() {
 
           <ResidentialWastePieChart />
 
-          <Paragraph>On the residential side, 25% of wasted food is spoiled and 7.5% is because of concerns with “best by” or “use by” data according to ReFed. A 2019 FDA report put the number even higher, with consumer uncertainty on date labels contributing about 20% of the food waste in the home. Legislation for standardizing date labels shows promise, with estimates of an XX% improvement. However, many of the most wasted food items (lettuce, bananas, apples, and bread for example) don't even have date labels - they are wasted because of poor planning, improper storage, or plain laziness.</Paragraph>
+          <Paragraph>Looking for ways to reduce our waste, one of the first problems that pops up is the issue of food spoilage. On the residential side, 25% of wasted food is spoiled and 7.5% is because of concerns with “best by” or “use by” data according to ReFed. A 2019 FDA report put the number even higher, with consumer uncertainty on date labels contributing about 20% of the food waste in the home. Legislation for standardizing these labels shows promise, with estimates of a 12% reduction in food wasted because of confusion over dates. However, many of the most wasted food items (lettuce, bananas, apples, and bread for example) don't even have date labels - they are wasted because of poor planning, improper storage, or plain laziness. While improved food date labels is would be helpful, it's only a stepping stone on a longer path to a better relationship with food.</Paragraph>
 
           <WasteSection wastables={[lettuce, bananas, apple, bread, gallonOfMilk]}></WasteSection>
 

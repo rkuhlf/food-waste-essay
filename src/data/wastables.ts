@@ -257,6 +257,8 @@ export const acreOfWheat: Wastable = {
 
 // Broccoli cruise ship.
 
+// Football stadium of cows.
+
 // The production output of a cheese factory for a year.
 
 // Throw away 100 blue whales

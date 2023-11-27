@@ -4,7 +4,7 @@
     background-color: #E2E8F0;
     border-top: var(--border-thickness) solid #A0AEC0;
 
-    --border-thickness: 3px;
+    --border-thickness: 5px;
 }
 
 .checkpoint-progress {

@@ -1,4 +1,4 @@
-import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title, TooltipModel, TooltipItem } from "chart.js";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title, TooltipItem } from "chart.js";
 import { Pie } from "react-chartjs-2";
 
 interface PieChartProps {

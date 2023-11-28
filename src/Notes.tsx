@@ -133,7 +133,6 @@ export default function Notes() {
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const index = urlParams.get("citation");
-        console.log(index);
 
         document.getElementById(`citation-${index}`)?.scrollIntoView();
     })

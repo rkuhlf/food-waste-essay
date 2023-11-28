@@ -56,13 +56,10 @@ export const WastedProvider = ({ children }: PropsWithChildren<{}>) => {
   }
 
   const reset = () => {
-    console.log("resetting");
     setData({
       ...initialData
     })
   }
-
-  console.log(reset);
 
   return (
     <WastedContext.Provider value={{data, updateData, refreshState, skipEverything, reset}}>

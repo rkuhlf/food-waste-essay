@@ -99,7 +99,7 @@ function averageAmericanMonth(wasted: WastedData) {
 
 function Article() {
   const [achievementsIsOpen, setAchievementsIsOpen] = useState<boolean>(false);
-  const { reset, data } = useContext(WastedContext);
+  const { reset } = useContext(WastedContext);
 
   let citationIndex = 1;
   return (

@@ -77,6 +77,10 @@ const notes = [
 
     <>
     Wilkinson, J. M., and M. R. F. Lee. “Review: Use of Human-Edible Animal Feeds by Ruminant Livestock.” <i>Animal</i>, vol. 12, no. 8, 12 Sept. 2017, pp. 1735-1743, https://doi.org/10.1017/s175173111700218x.
+    </>,
+
+    <>
+    “Cattle per Acre Calculator.” <i>Omni Calculator</i>, <a href="http://www.omnicalculator.com/biology/cattle-per-acre">www.omnicalculator.com/biology/cattle-per-acre</a>. Accessed 27 Nov. 2023.
     </>
 ]
 

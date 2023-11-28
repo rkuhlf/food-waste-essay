@@ -5,7 +5,7 @@ import "./Cite.css";
 export function Cite({ index }: { index: number }) {
     return (
         <sup className="citation">
-            <a href={`./notes#citation-${index}`} target="_blank">{index}</a>
+            <a href={`./notes?citation=${index}`} target="_blank">{index}</a>
         </sup>
     )
 }

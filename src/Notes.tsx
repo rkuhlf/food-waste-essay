@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.css";
 import Paragraph from "./Paragraph";
 
@@ -127,6 +128,15 @@ const notes = [
 ]
 
 export default function Notes() {
+    useEffect(() => {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const index = urlParams.get("citation");
+        console.log(index);
+
+        document.getElementById(`citation-${index}`)?.scrollIntoView();
+    })
+
     return (
         <> 
             <div className="read-article">
@@ -143,7 +153,7 @@ export default function Notes() {
                     <ol className="citations-page">
                         {
                             notes?.map((note, index) => {
-                                return <li id={`citation-${index+1}`}>
+                                return <li key={index} id={`citation-${index+1}`}>
                                     {note}
                                 </li>
                             })

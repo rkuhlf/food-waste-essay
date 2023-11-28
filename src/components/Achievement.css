@@ -46,9 +46,9 @@
 
 .achievement-subtitle {
     margin: 0;
-    padding: 0;
+    padding-bottom: 2px;
 
-    font-size: 0.7em;
+    font-size: 0.6em;
     font-weight: 400;
     font-style: italic;
 }

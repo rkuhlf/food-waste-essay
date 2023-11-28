@@ -185,8 +185,17 @@ function Article() {
           <WasteSection wastables={[apple, gallonOfMilk, bread, bananas, lettuce, cheese, carrots, dozenEggs, chickenThigh, steak, pork, pizza, iceCream, cake, cow, pig, egg, chicken, acreOfWheat, mealPlan, swimmingPoolOfMilk]}></WasteSection>
 
           <Checkpoint label="Waste the amount of food wasted by the US population every year." progressFunction={americaFoodWaste}>
-            
-          <Paragraph>Thank you for reading. You can view the notes and <Link to="./notes">here</Link>, and you can reset the article by clicking <a className='reset' onClick={() => reset()}>here</a>.</Paragraph>
+          
+          <h2 className='links'>Links and References</h2>
+
+          <Paragraph>
+            <ul className='links-list'>
+              <li>Reset the article by clicking <a className='reset' onClick={() => reset()}>here</a>.</li>
+              <li>View the notes <Link to="./notes">here</Link>.</li>
+              <li>Further explore the data behind food waste on <a href="https://insights-engine.refed.org/food-waste-monitor?view=overview" target="_blank">ReFed's insights dashboard</a>.</li>
+              <li>Read more about the waste created by animals <a target="_blank" href="https://doi.org/10.1017/s175173111700218x">here</a> and by overeating <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0308521X16302384">here</a>.</li>
+            </ul>
+          </Paragraph>
 
           <br />
           <br />

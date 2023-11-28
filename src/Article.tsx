@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
 import Achievements from './components/Achievements';
 import AchievementsMenu from './components/AchievementsMenu';
@@ -10,7 +11,7 @@ import WasteSection from './components/WasteSection';
 import { apple, bananas, bread, cake, carrots, cheese, chicken, chickenThigh, cow, dozenEggs, egg, gallonOfMilk, iceCream, lettuce, mealPlan, pork, pig, pizza, steak, swimmingPoolOfMilk, acreOfWheat, happyMeal, cheetos, kfcBucket } from './data/wastables';
 import Paragraph from './Paragraph';
 import AchievementsPopup from './popups/AchievementsPopup';
-import { WastedData, WastedProvider } from './providers/wastedContext';
+import { WastedContext, WastedData } from './providers/wastedContext';
 
 function threeApplesProgress(wasted: WastedData) {
   let apple = wasted.get("Apple");
@@ -98,11 +99,12 @@ function averageAmericanMonth(wasted: WastedData) {
 
 function Article() {
   const [achievementsIsOpen, setAchievementsIsOpen] = useState<boolean>(false);
+  const { reset, data } = useContext(WastedContext);
+  console.log(reset, data);
 
   let citationIndex = 1;
   return (
     <>
-      <WastedProvider>
         {
           achievementsIsOpen ?
           <AchievementsPopup closePopup={() => setAchievementsIsOpen(false)} />
@@ -185,7 +187,10 @@ function Article() {
 
           <Checkpoint label="Waste the amount of food wasted by the US population every year." progressFunction={americaFoodWaste}>
             
-          <Paragraph>Thank you for reading.</Paragraph>
+          <Paragraph>Thank you for reading. You can view the notes and <Link to="./notes">here</Link>, and you can reset the article by clicking <a className='reset' onClick={() => reset()}>here</a>.</Paragraph>
+
+          <br />
+          <br />
 
           </Checkpoint>
           </Checkpoint>
@@ -196,7 +201,6 @@ function Article() {
           </Checkpoint>
           </Checkpoint>
         </main>
-      </WastedProvider>
     </>
   )
 }

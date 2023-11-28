@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./App.css";
 import Paragraph from "./Paragraph";
 
@@ -140,9 +141,9 @@ export default function Notes() {
     return (
         <> 
             <div className="read-article">
-                <a href="/">
+                <Link to="/">
                     Read the article
-                </a>
+                </Link>
             </div>
             <div className='title-container'>
             <h1>From Data to Dumpsters</h1>

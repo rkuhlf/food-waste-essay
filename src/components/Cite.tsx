@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Cite.css";
 
 // We have an array of citations. The citation says what number it is, which tells you where to link to.
@@ -5,7 +6,7 @@ import "./Cite.css";
 export function Cite({ index }: { index: number }) {
     return (
         <sup className="citation">
-            <a href={`./notes?citation=${index}`} target="_blank">{index}</a>
+            <Link to={`./notes?citation=${index}`}>{index}</Link>
         </sup>
     )
 }

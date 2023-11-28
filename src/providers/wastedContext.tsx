@@ -21,16 +21,19 @@ export const WastedContext = createContext<{
   updateData: (d: Partial<WastedContextData>) => void,
   refreshState: Function,
   skipEverything: Function,
+  reset: Function,
 }>({
   data: initialData, 
   updateData: () => {},
   refreshState: () => {},
   skipEverything: () => {},
+  reset: () => {},
 });
 
 // Create a provider component
 export const WastedProvider = ({ children }: PropsWithChildren<{}>) => {
-  const [data, setData] = useState<WastedContextData>(initialData);
+  // Shallow copy is good enough.
+  const [data, setData] = useState<WastedContextData>({...initialData});
 
   const updateData = (newData: Partial<WastedContextData>) => {
     const overriden = {
@@ -52,8 +55,17 @@ export const WastedProvider = ({ children }: PropsWithChildren<{}>) => {
     })
   }
 
+  const reset = () => {
+    console.log("resetting");
+    setData({
+      ...initialData
+    })
+  }
+
+  console.log(reset);
+
   return (
-    <WastedContext.Provider value={{data, updateData, refreshState, skipEverything}}>
+    <WastedContext.Provider value={{data, updateData, refreshState, skipEverything, reset}}>
       {children}
     </WastedContext.Provider>
   );

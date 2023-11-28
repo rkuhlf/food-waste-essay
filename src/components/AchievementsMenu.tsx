@@ -21,7 +21,6 @@ export default function AchievementsMenu({openAchievements}: {openAchievements: 
         }
     }, [data.refresh]);
 
-    console.log(shouldGlow(beenOpened, atLeastOneAchievement));
     return (
         <div className={"achievements-menu " + (shouldGlow(beenOpened, atLeastOneAchievement) ? "achievements-glow" : "")} onClick={() => {
                 openAchievements();

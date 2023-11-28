@@ -1,9 +1,9 @@
 :root {
   --article-width: 800px;
   --achievements-offset: 20px;
-  --achievements-height: 2vw; /* 1.7rem; */
+  --achievements-height: max(2vw, 1.7rem); /* 1.7rem; */
 
-  --achievement-border: 0.2vw solid #171923;
+  --achievement-border: max(0.2vw, 2px) solid #171923;
   --achievement-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
 }
 

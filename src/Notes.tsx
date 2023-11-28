@@ -81,6 +81,12 @@ const notes = [
 
     <>
     “Cattle per Acre Calculator.” <i>Omni Calculator</i>, <a href="http://www.omnicalculator.com/biology/cattle-per-acre">www.omnicalculator.com/biology/cattle-per-acre</a>. Accessed 27 Nov. 2023.
+    </>,
+
+    <>
+    According to the USDA, 100g of steak is equivalent to 26g of protein. According to the source below, the average amount of meat obtained from a cow is 480 pounds. That comes out to 54431 grams.
+    <br />
+    “Amount of Freezer Beef Expected from a Carcass?” <i>Beef2Live</i>, <a href="http://beef2live.com/story-amount-freezer-beef-expected-carcass-0-111639">beef2live.com/story-amount-freezer-beef-expected-carcass-0-111639</a>. Accessed 27 Nov. 2023.
     </>
 ]
 

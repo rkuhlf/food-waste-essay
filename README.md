@@ -1,36 +1,7 @@
+This essay was written for ENST 312: Justice in the Food System at Rice, and is now hosted at https://datatodumpsters.vercel.app/.
 
-<!-- https://www.svgrepo.com/svg/533056/trophy -->
-<!-- https://www.svgrepo.com/collection/fitness-and-health-food-vectors/ -->
-<!-- https://www.svgrepo.com/svg/398060/pig-face -->
-<!-- https://chakra-ui.com/docs/styled-system/theme -->
+Built with React + TypeScript + Vite. Colors are from https://chakra-ui.com/docs/styled-system/theme. Images were obtained from the following sources:
+- https://www.svgrepo.com/svg/533056/trophy
+- https://www.svgrepo.com/collection/fitness-and-health-food-vectors/
+- https://www.svgrepo.com/svg/398060/pig-face
 
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
